@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200&family=Lato:ital,wght@0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200&family=Lato:ital,wght@0,400;0,900;1,100&display=swap');
+*{
+    margin: auto;
+    padding: auto;
+
+}
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #7d63b2;
+    background-color: #3c246b;
+    padding: 15px 0 15px 0;
+    font-family: 'Blinker', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+.Navbar a{
+    color: #7d63b2;
+    text-decoration: none;
+}
+.Navbar input{
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+body{
+    background-color:#0c0d0f;
+}
+hr{
+    background-color: #7d63b2;
+    height: 10px;
+    border: none;
+}
+/*linear-gradient(rgba(69, 36, 107, 0.5), rgba(69, 36, 107, 0.5)),*/
+.infoMovie{
+    height: 700px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/peaky_blinders_banner.jpg);
+    background-size: cover;
+    display: flex;
+}
+.image{
+    display: flex;
+    width: 30%;
+}
+.image img{
+    width: 60%;
+}
+.infoText{
+    width: 70%;
+    color: white;
+    padding-right: 10%;
+
+}
+.infoMovie h1{
+    font-size: 70px;
+    color: #7d63b2;
+    font-family: 'Blinker', sans-serif;
+font-family: 'Lato', sans-serif;
+}
+.infoText p{
+    font-size: 20px;
+    font-family: 'Blinker', sans-serif;
+    font-family: 'Lato', sans-serif;
+    
+}
+.infoText span{
+    color: #7d63b2;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+.video iframe{
+    height: 90%;
+    width: 60%;
+}
+.chapters{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 6%;
+}
+.chap{
+    width: 15%;
+    margin: 0%;
+}
+.chap h2{
+    color: #7d63b2;
+    text-align: center;
+    font-family: 'Blinker', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+.chap img{
+    width: 100%;
+}
+.chap img:hover{
+    opacity: 0.3;
+    transform: scale(0.9);
+    transition-duration: 1s;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0 2% 0;
+}
+footer img{ 
+    width: 100px;
+}
+footer h1{
+    color: #7d63b2;
+    font-family: 'Blinker', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+@media(max-width:600px){
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .Navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .Navbar img{
+        width: 25%;
+    }
+    .Navbar input{
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+    }
+    .infoMovie{
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        display: flex;
+        width: 50%;
+    }
+    .image img{
+        width: 70%;
+    }
+    .infoText{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0%;
+        width: 80%;
+    }
+    .infoMovie h1{
+        font-size: 30px;
+    }
+    .infoText p{
+        font-size: 15px;
+        margin: unset;
+    }
+    .video{
+        display: flex;
+        justify-content: center;
+        height: 400px;
+    }
+    .video iframe{
+        height: 70%;
+        width: 90%;
+    }
+    .chapters{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 6%;
+    }
+    .chap{
+        width: 20%;
+        margin: 0%;
+    }
+    .chap h2{
+       font-size: medium;
+
+    }
+    .chap img{
+        width: 100%;
+    }
+    footer img{
+        width: 20%;
+    }
+}
+@media (min-width: 601px) and (max-width: 991px){
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .Navbar input{
+        height: 30px;
+        width: 180px;
+        font-size: 15px;
+    }
+    .Navbar img{
+        width: 15%;
+    }
+    .infoMovie{
+        height: 600px;
+    }
+    .image{
+        width: 40%;
+    }
+    .image img{
+        width: 85%;
+    }
+    .infoText{
+        padding-right: 0%   
+    }
+    .infoMovie h1{
+        font-size: 45px;
+    }
+    .infoText p{
+        font-size: 17px;       
+    }
+    .video iframe{
+        height: 70%;
+        width: 90%;
+    }
+}
+@media (min-width: 992px){
+    .video iframe{
+        height: 90%;
+        width: 80%;
+    }
+}
