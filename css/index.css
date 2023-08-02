@@ -36,6 +36,7 @@ hr{
     height: 10px;
     border: none;
 }
+
 .contain{
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +47,6 @@ hr{
 .card{
     width: 22%;
     margin: 0px;
-    padding-bottom: 5%;
 }
 .card img:hover{
     opacity: 0.3;
@@ -73,6 +73,18 @@ hr{
     font-family: 'Blinker', sans-serif;
     font-family: 'Lato', sans-serif;
 }
+input{
+    outline: none;
+}
+
+h1.product{
+    margin-left: 8.6%;
+    margin-top: 4%;
+    font-family: 'Lato', sans-serif;
+    color: aliceblue;
+    padding: 0;
+}
+
 #year{
     border: 1px solid;
     border-radius: 5px;
@@ -91,6 +103,35 @@ footer h1{
     font-family: 'Blinker', sans-serif;
     font-family: 'Lato', sans-serif;
 }
+.filter{
+    display: none;
+}
+
+/* filtro */
+  
+  .filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+  
+  .btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #3c246b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: em;
+    font-weight: bold;
+  }
+  
+  .btn.active {
+    background-color: #7d63b2;
+  }
+/*  */
 @media(max-width:600px){
     html, body{
         max-width: 100%;
@@ -102,8 +143,10 @@ footer h1{
         flex-wrap: wrap;
     }
     
-    .Navbar img{
-        width: 25%;
+    a.home img{
+        display: flex;
+        justify-content: center;
+        width: 80%;
     }
     .Navbar input{
         height: 30px;
@@ -143,7 +186,7 @@ footer h1{
         font-size: 15px;
     }
     .Navbar img{
-        width: 15%;
+        width: 35%;
     }
     .card{
         width: 25%;
