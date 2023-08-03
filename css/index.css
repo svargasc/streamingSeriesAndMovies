@@ -30,6 +30,8 @@
 }
 body{
     background-color:#0c0d0f;
+    height: auto;
+    min-height: 1400px;
 }
 hr{
     background-color: #7d63b2;
@@ -43,6 +45,7 @@ hr{
     padding:4% 6% 4% 6%;
     justify-content: center;
     gap: 30px;
+    height: auto;
 }
 .card{
     width: 22%;
