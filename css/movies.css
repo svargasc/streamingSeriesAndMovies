@@ -50,7 +50,7 @@ nav ul li a{
     align-items: center;
     background-color: #141414;
     height: auto;
-    min-height: 800px;
+    min-height: 600px;
 }
 .container{
     padding-top: 2.5%;
@@ -264,6 +264,7 @@ nav ul li a{
 
 .modal{
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -287,7 +288,7 @@ nav ul li a{
 
 .modal__container{
     margin: auto;
-    width: 90%;
+    width: 95%;
     height: 500px;
     max-width: 900px;
     max-height: 100%;
@@ -321,8 +322,8 @@ nav ul li a{
 .modal__close{
     text-decoration: none;
     color: #fff;
-    background-color: #F26250;
-    padding: 1em 3em;
+    background-color: #3c246b;
+    padding: 0.5em 1em;
     border: 1px solid ;
     border-radius: 6px;
     display: inline-block;
@@ -407,24 +408,30 @@ h1.active{
 }
 
 @media (min-width: 1301px) and (max-width: 1800px) {
-    iframe{
-        width: 1200px;
-        height: 500px;
+    .modal__container{
+        height: 700px;
+    }
+    .hero__cta img{
+        height: 700px;
     }
 }
 
 
 @media (min-width: 1001px) and (max-width: 1300px) {
-    iframe{
-        width: 900px;
-        height: 500px;
+    .modal__container{
+        height: 650px;
+    }
+    .hero__cta img{
+        height: 650px;
     }
 }
 
 
 @media (min-width: 768px) and (max-width: 1000px) {
-    iframe{
-        width: 700px;
+    .modal__container{
+        height: 500px;
+    }
+    .hero__cta img{
         height: 500px;
     }
 }
@@ -434,10 +441,10 @@ h1.active{
         padding-bottom: 0.5%;
         width: 100%;
     }
-    iframe{
-        width: 400px;
-        height: 320px;
+    .modal__container{
+        height: 300px;
     }
+    
     
     nav ul li a{
         font-size: 1.5em;
@@ -447,6 +454,9 @@ h1.active{
     }
     ul .img__Crocodile{
         width: 20%;
+    }
+    .hero__cta img{
+        height: 300px;
     }
     .img__Crocodile img {
         width: 100%;

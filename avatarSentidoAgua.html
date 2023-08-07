@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,16 @@
     <link rel="stylesheet" href="css/movies.css">
     <link rel="stylesheet" href="css/header.css">
 </head>
+
 <body>
     <header class="Navbar">
         <img src="images/cocodrilo.png" alt="">
-        <a href="movies.html"><h1>Peliculas</h1></a>
-        <a href="series.html"><h1>Series</h1></a>
+        <a href="movies.html">
+            <h1>Peliculas</h1>
+        </a>
+        <a href="series.html">
+            <h1>Series</h1>
+        </a>
     </header>
     <div class="line"></div>
 
@@ -22,7 +28,10 @@
                 <img src="images/avatar sentido del agua.jpg" width="220px" height="320px" alt="">
                 <div class="movie__information">
                     <h1>Avatar sentido del agua</h1>
-                    <p>Ambientada más de una década después de los acontecimientos de la primera película, 'Avatar: The Way of Water' empieza contando la historia de la familia Sully (Jake, Neytiri y sus hijos), los problemas que los persiguen, lo que tienen que hacer para mantenerse a salvo, las batallas que libran para seguir con vida y las tragedias que sufren.</p>
+                    <p>Ambientada más de una década después de los acontecimientos de la primera película, 'Avatar: The
+                        Way of Water' empieza contando la historia de la familia Sully (Jake, Neytiri y sus hijos), los
+                        problemas que los persiguen, lo que tienen que hacer para mantenerse a salvo, las batallas que
+                        libran para seguir con vida y las tragedias que sufren.</p>
                     <div class="category">
                         <p><span class="card__category">Categoria: </span>Acción, Aventura.</p>
                         <p><span class="card__category">Actores: </span>
@@ -42,11 +51,24 @@
     </section>
 
     <section class="trailer">
-        <div class="play__trailer"></div>
         <div class="trailer__movie">
-             <iframe width="1700" height="793" src="https://www.youtube.com/embed/FSyWAxUg3Go" title="Avatar: El Sentido del Agua | Tráiler Oficial en español | HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>    
+            <div class="hero__main__container">
+                <button class="hero__cta">
+                    <img class="cover__movie" src="images/avatar play movie.jpeg" alt="">
+                </button>
+            </div>
+        </div>
     </section>
+
+    <div class="modal">
+        <div class="modal__container">
+            <iframe width="1584" height="712" src="https://www.youtube.com/embed/FSyWAxUg3Go"
+                title="Avatar: El Sentido del Agua | Tráiler Oficial en español | HD" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <a href="#" class="modal__close">X</a>
+        </div>
+    </div>
 
     <section class="movies">
         <div class="container">
@@ -148,6 +170,7 @@
         <h1>CachiMovies</h1>
     </footer>
 
-
+    <script src="js/modal.js"></script>
 </body>
+
 </html>
