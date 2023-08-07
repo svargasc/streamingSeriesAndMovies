@@ -180,6 +180,17 @@ footer h1{
     background-color: #fff;
 }
 
+.hero__main:hover{
+    background-image: url(/images/Video-Player-Logo-PNG-HD-Quality.png);
+    background-position: center;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    .quality{
+        display: none;
+    }
+    
+}
+
 @media(max-width:600px){
     html, body{
         max-width: 100%;
