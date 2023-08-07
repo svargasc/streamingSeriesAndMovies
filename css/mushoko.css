@@ -38,7 +38,7 @@ hr{
 /*linear-gradient(rgba(69, 36, 107, 0.5), rgba(69, 36, 107, 0.5)),*/
 .infoMovie{
     height: 700px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/mushoko-tensei-banner.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/mushoko-tensei-banner.jpg);
     background-size: cover;
     display: flex;
 }
@@ -70,15 +70,7 @@ font-family: 'Lato', sans-serif;
 .infoText span{
     color: #7d63b2;
 }
-.video{
-    display: flex;
-    justify-content: center;
-    height: 600px;
-}
-.video iframe{
-    height: 90%;
-    width: 60%;
-}
+
 .chapters{
     display: flex;
     justify-content: space-evenly;
@@ -115,6 +107,79 @@ footer h1{
     font-family: 'Blinker', sans-serif;
     font-family: 'Lato', sans-serif;
 }
+ 
+
+.hero__main{
+    grid-area: content;
+    display: flex;
+    gap: 2em;
+    padding-bottom: 180px; 
+    padding-top: 50px;
+}
+.hero__cta img{
+    width: 95%;
+    display: flex;
+    height: 600px;
+}
+.hero__cta:hover img{
+    opacity: 0.3;
+    transition-duration: 1s;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    place-items: center;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+.modal__container iframe{
+    width: 100%;
+    height: 500px;
+}
+.modal__close{
+    text-decoration: none;
+    color: #fff;
+    background-color: #7d63b2;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+.modal__close:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
 @media(max-width:600px){
     html, body{
         max-width: 100%;
@@ -159,14 +224,15 @@ footer h1{
         font-size: 15px;
         margin: unset;
     }
-    .video{
-        display: flex;
-        justify-content: center;
-        height: 400px;
-    }
-    .video iframe{
-        height: 70%;
+
+    .modal__container iframe{
+        height: 200px;
         width: 90%;
+    }
+    .hero__cta img{
+        width: 100%;
+        display: flex;
+        height: 200px;
     }
     .chapters{
         display: flex;
@@ -220,14 +286,13 @@ footer h1{
     .infoText p{
         font-size: 17px;       
     }
-    .video iframe{
-        height: 70%;
+    .modal__container iframe{
+        height: 400px;
         width: 90%;
     }
-}
-@media (min-width: 992px){
-    .video iframe{
-        height: 90%;
-        width: 80%;
+    .hero__cta img{
+        width: 100%;
+        display: flex;
+        height: 300px;
     }
 }
