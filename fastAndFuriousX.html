@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast And Furious X</title>
-    <link rel="stylesheet" href="/css/movies.css">
-    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="css/movies.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 
 <body>
     <header class="Navbar">
-        <img src="/images/cocodrilo.png" alt="">
-        <a href="/movies.html"><h1>Peliculas</h1></a>
+        <img src="images/cocodrilo.png" alt="">
+        <a href="movies.html"><h1>Peliculas</h1></a>
         <a href="series.html"><h1>Series</h1></a>
     </header>
 
@@ -22,7 +22,7 @@
         <div class="background">
             <div class="top__movie">
                 <div class="container__top__movie">
-                    <img src="/images/fast & furious X.jpg" width="220px" height="320px" alt="">
+                    <img src="images/fast & furious X.jpg" width="220px" height="320px" alt="">
                     <div class="movie__information">
                         <h1>Fast and Furious X</h1>
                         <p>Durante numerosas misiones más que imposibles, Dom Toretto y su familia han sido capaces de
@@ -58,24 +58,35 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="trailer">
-            <div class="play__trailer"></div>
-            <div class="trailer__movie">
-                <iframe width="1700" height="793" src="https://www.youtube.com/embed/FDhvbIqTQwI"
-                    title="FAST &amp; FURIOUS X – Tráiler Oficial (Universal Pictures) HD" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+    <section class="trailer">
+        <div class="trailer__movie">
+            <div class="hero__main__container">
+                <button class="hero__cta">
+                    <img class="cover__movie" src="images/fast & furious x play movie.jpg" alt="">
+                </button>
             </div>
         </div>
     </section>
+
+    <div class="modal">
+        <div class="modal__container">
+            <iframe width="1700" height="793" src="https://www.youtube.com/embed/FDhvbIqTQwI"
+                    title="FAST &amp; FURIOUS X – Tráiler Oficial (Universal Pictures) HD" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            <a href="#" class="modal__close">X</a>
+        </div>
+    </div>
+
     <section class="movies">
         <div class="container">
             <div class="movies__card">
                 <div class="repro">
-                    <a href="/loverboy.html" class="link__card__movie">
+                    <a href="loverboy.html" class="link__card__movie">
                         <div class="cover__movie">
-                            <img src="/images/loverboy.jpg" alt="">
+                            <img src="images/loverboy.jpg" alt="">
                             <div class="quality__movie">
                                 <div class="quality">HD</div>
                             </div>
@@ -95,9 +106,9 @@
 
             <div class="movies__card">
                 <div class="repro">
-                    <a href="/fastAndFuriousX.html" class="link__card__movie">
+                    <a href="fastAndFuriousX.html" class="link__card__movie">
                         <div class="cover__movie">
-                            <img src="/images/fast & furious X.jpg" alt="">
+                            <img src="images/fast & furious X.jpg" alt="">
                             <div class="quality__movie">
                                 <div class="quality">HD</div>
                             </div>
@@ -119,7 +130,7 @@
                 <div class="repro">
                     <a href="/fastAndFurious8.html" class="link__card__movie">
                         <div class="cover__movie">
-                            <img src="/images/fast & furious 8.jpg" alt="">
+                            <img src="images/fast & furious 8.jpg" alt="">
                             <div class="quality__movie">
                                 <div class="quality">HD</div>
                             </div>
@@ -141,7 +152,7 @@
                 <div class="repro">
                     <a href="/avatarSentidoAgua.html" class="link__card__movie">
                         <div class="cover__movie">
-                            <img src="/images/avatar sentido del agua.jpg" alt="">
+                            <img src="images/avatar sentido del agua.jpg" alt="">
                             <div class="quality__movie">
                                 <div class="quality">HD</div>
                             </div>
@@ -165,11 +176,11 @@
     <div class="line"></div>
 
     <footer>
-        <img src="/images/cocodrilo.png" alt="">
+        <img src="images/cocodrilo.png" alt="">
         <h1>CachiMovies</h1>
     </footer>
 
-
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
