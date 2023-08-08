@@ -64,7 +64,7 @@ nav ul li a{
     width: 95%;
 }
 .repro:hover{
-    background-image: url(images/Video-Player-Logo-PNG-HD-Quality.png);
+    background-image: url('https://www.pngplay.com/wp-content/uploads/8/Video-Player-Logo-PNG-HD-Quality.png');
     background-position: center;background-size: 50%;
     background-repeat: no-repeat;
     .quality{
@@ -253,7 +253,7 @@ nav ul li a{
 }
 
 .hero__main__container:hover{
-    background-image: url(images/Video-Player-Logo-PNG-HD-Quality.png);
+    background-image: url('https://www.pngplay.com/wp-content/uploads/8/Video-Player-Logo-PNG-HD-Quality.png');
     background-position: center;background-size: 25%;
     background-repeat: no-repeat;
     .quality{
