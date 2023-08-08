@@ -181,7 +181,7 @@ footer h1{
 }
 
 .hero__main:hover{
-    background-image: url(images/Video-Player-Logo-PNG-HD-Quality.png);
+    background-image: url('https://www.pngplay.com/wp-content/uploads/8/Video-Player-Logo-PNG-HD-Quality.png');
     background-position: center;
     background-size: 10%;
     background-repeat: no-repeat;
