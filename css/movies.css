@@ -436,7 +436,7 @@ h1.active{
     }
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
     header{
         padding-bottom: 0.5%;
         width: 100%;
